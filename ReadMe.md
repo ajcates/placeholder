@@ -6,13 +6,13 @@ To use just include the plugin file along with jQuery. Then in your dom.ready fu
 
     (function($) {
         $(document).ready(function() {
-            $(".placeholder").placeholder();
+            $("input[placeholder]").placeholder();
         });
     })(jQuery);
 
 Your input elements need to have the placeholder attribute on them.
 
-    <input class="placeholder" type="text" name="first-name" id="first-name" placeholder="Smith" />
+    <input type="text" name="first-name" id="first-name" placeholder="John" />
 
 ##Feature Plans
 
@@ -21,3 +21,5 @@ Some sort of feature detection in order to let browsers who support placeholder 
 ##About
 
 Originally inspired by [@robertbanh](http://forrst.com/people/robertbanh)'s [post on Forrst](http://forr.st/~ylp). You can also find the code on [github](http://github.com/ajcates/placeholder).
+
+Also thanks to [@ejetzer](http://forrst.com/people/ejetzer) for suggesting a better way of selecting placeholder input elements.
