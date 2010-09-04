@@ -9,7 +9,7 @@
 	<script>
 		(function($) {
 			$(document).ready(function() {
-				$(".placeholder").placeholder();
+				$("input[placeholder]").placeholder();
 			});
 		})(jQuery);
 	</script>
@@ -23,13 +23,13 @@
 	<h1>Place Holder Demo</h1>
 	<form action="#" method="post">
 		<label for="first-name">First Name:</label>
-		<input class="placeholder" type="text" name="first-name" id="first-name" placeholder="John" />
+		<input type="text" name="first-name" id="first-name" placeholder="John" />
 		
 		<label for="first-name">Last Name:</label>
-		<input class="placeholder" type="text" name="first-name" id="first-name" placeholder="Smith" />
+		<input type="text" name="first-name" id="first-name" placeholder="Smith" />
 		
 		<label for="email">Email:</label>
-		<input class="placeholder" type="email" name="first-name" id="first-name" placeholder="user@example.com" />
+		<input type="email" name="first-name" id="first-name" placeholder="user@example.com" />
 		
 		<input type="submit" value="Submit" />
 	</form>
