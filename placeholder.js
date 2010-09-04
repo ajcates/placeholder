@@ -3,13 +3,13 @@
 		placeholder : function() {
 			return this.each(function() {
 				$(this).focus(function() {
-				    if ($(this).val() == $(this).attr("placeholder")) {
-				    	$(this).val("");
-				    }
+					if ($(this).val() == $(this).attr("placeholder")) {
+						$(this).val("");
+					}
 				}).blur(function() {
-				    if ($(this).val() == "") {
+					if ($(this).val() == "") {
 						$(this).val($(this).attr("placeholder"));
-				    }
+					}
 				}).val($(this).attr("placeholder"));
 			});
 		}
